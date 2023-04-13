@@ -8,5 +8,5 @@ data = {
 }
 
 for key, value in data.items():
-    with open(f'{key}.json', 'w') as f:
+    with open(f'{key}.json', 'w', encoding="utf-8") as f:
         json.dump({key: value}, f)
